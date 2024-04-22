@@ -1,0 +1,7 @@
+﻿@page
+@model IndexModel
+<wf-panel title="Sales" save="false" close="false">
+    <wf-chart width="600" height="100" label="Last Year" chart-data="Model._Chart2" color="#77CAE0" chart-data2="Model._Chart" label2="This Year" color2="#04658F" />
+    <wf-table name="" data="Model._Table"
+        fields="@(new string[] { "Month", "LastYear", "ThisYear" })" />
+</wf-panel>
